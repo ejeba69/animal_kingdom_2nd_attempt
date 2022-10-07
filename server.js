@@ -1,4 +1,3 @@
-// const express = require('express');
 const mongoose = require('mongoose');
 const { config } = require('dotenv');
 const { AnimalClass } = require('./AnimalModel');
@@ -17,14 +16,9 @@ async function mongoDBLive() {
   }
 }
 
-// const getAll = AnimalClass.find();
-// console.log(getAll);
+async function findThem() {
+const getAll = await AnimalClass.find();
+console.log(getAll);
+}
 
-let getAll;
-
-const a = async function allAnimals() {
-  getAll = await AnimalClass.find();
-  return getAll;
-};
-
-console.log(a);
+findThem();
