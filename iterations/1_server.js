@@ -6,6 +6,21 @@ const { AnimalClass } = require('./AnimalModel');
 config();
 mongoDBLive();
 
+/* 
+const app = express();
+const PORT = process.env.PORT;
+*/
+
+// app.use(express.json());
+
+/* 
+app.get('/', async (req, res) => {
+  const getAll = await AnimalClass.find();
+  console.log(getAll);
+  res.send(getAll);
+});
+ */
+
 async function mongoDBLive() {
   const DB_URI = process.env.DB_URI;
   // try {} catch () {}
@@ -17,12 +32,11 @@ async function mongoDBLive() {
   }
 }
 
-// const getAll = AnimalClass.find();
-// console.log(getAll);
+const getAll = AnimalClass.find();
+console.log(getAll);
 
-async function allAnimals() {
-  const getAll = await AnimalClass.find();
-  console.log(getAll);
-}
-
-allAnimals();
+/* 
+app.listen(PORT, () => {
+  console.log(`Server is fully OBI-dient!`, PORT);
+});
+*/
