@@ -1,0 +1,21 @@
+{
+  "name": "2_animal_kingdom",
+  "version": "1.0.0",
+  "description": "__14:58 fri oct7 wk40 2022__ Just failed in my first attempt to set up an MVC module system. Because, I was trying to completely seperate data logic from business logic (at least using the little understanding I about the subject).  I believe that it is the asynchronous nature of the mongoose methods [e.g. find()] that messed me up. Anyway, I live to fight another day. So, I want to start all over again on a clean slate, and see if I can come up with what will work. By the way, I doing this, in a bid to have a personal understanding (i.e. to internalize) of what it takes to set up an API, as opposed to just a memorization of the steps.",
+  "main": "server",
+  "author": "Emmanuel Eni <eejeba@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+  	"start": "node",
+  	"dev": "nodemon",
+  	"test": "jest"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "mongoose": "^6.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
