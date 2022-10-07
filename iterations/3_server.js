@@ -20,11 +20,18 @@ async function mongoDBLive() {
 // const getAll = AnimalClass.find();
 // console.log(getAll);
 
-let getAll;
-
-const a = async function allAnimals() {
+async function allAnimals() {
   getAll = await AnimalClass.find();
   return getAll;
-};
+}
 
+const b = allAnimals();
+console.log(b);
+
+function square() {
+  y = 9 ** 2;
+  return y;
+}
+
+const a = square();
 console.log(a);
